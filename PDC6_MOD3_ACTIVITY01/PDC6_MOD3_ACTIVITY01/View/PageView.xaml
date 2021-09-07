@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_MOD3_ACTIVITY01.View.PageView">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+               <Label Text="Hello Register Now!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text="Subject Code" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Entry Text="{Binding StudentCodeEntry}" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Subject Title" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Entry Text="{Binding StudentTitleEntry}" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Unit" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Entry Text="{Binding StudentUnitEntry}" HorizontalTextAlignment="Center"/>
+
+            <Button Command="{Binding SubmitEntry}" Text="Submit" BackgroundColor="#98FB98	"/>
+            <Button Command="{Binding ClearEntry}" Text="Clear" BackgroundColor="#db7093"/>
+            <Label Text="Subject Code:" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="{Binding StudentCodeDisplay}" TextColor="Black"/>
+            <Label Text="Subject Title:" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="{Binding StudentTitleDisplay}" TextColor="Black"/>
+            <Label Text="Unit:" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="{Binding StudentUnitDisplay}" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
